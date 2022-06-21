@@ -1,0 +1,76 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+    color: #eee;
+}
+
+div div {
+    border-bottom: #ff4a12 solid 5px;
+    padding: 10px;
+    position: relative;
+}
+
+div div::after {
+    content: "''";
+    color: #b3b3b3;
+    position: absolute;
+    right: 5px;
+    font-size: 50px;
+    bottom: -25px;
+
+}
+
+.dark {
+    background-color: #000000;
+    color: #f4fefb;
+}
+
+.parent {
+    display: grid;
+    grid-template: repeat(4, auto) / repeat(4, 1fr);
+    gap: 20px;
+    background-color: #505050;
+    padding: 020px;
+}
+
+#om {
+    grid-area: 1/1/span 1/span 2;
+}
+
+#sn {
+    grid-area: 1/4/span 3/ span 1;
+}
+
+#mi {
+    grid-area: 2/1/span 2/span 1;
+}
+
+#mm {
+    grid-area: 2/2/span 1/span 2;
+}
+
+#ee {
+    grid-area: 3/2/span 1/span 2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.light {
+    background-color: #aaa;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    font-weight: bold;
+}
+
+#es {
+    grid-area: 4/4/span 1/span 1;
+}
